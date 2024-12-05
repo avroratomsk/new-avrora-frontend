@@ -12,6 +12,7 @@
 
 @import "_header";
 @import "_footer";
+@import "_global";
 
 *{
   outline: none;
@@ -23,6 +24,7 @@ html {
 }
 
 body{
+  background: #001727;
   margin: 0;
   padding: 0;
   display: flex;
