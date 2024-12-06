@@ -17,6 +17,9 @@
   }
 
   .container {
+    @media (min-width: 1200px) {
+      //max-width: 1730px !important;
+    }
   }
 
   &__inner {
@@ -75,6 +78,10 @@
     }
   }
 
+  &__city {
+
+  }
+
   &__social {
     width: 40px;
     height: 40px;
@@ -121,7 +128,8 @@
 
   &__link {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
+    transition: $animation_speed;
 
     @media (max-width: 1325px) {
       font-size: 18px;
@@ -129,6 +137,12 @@
 
     @media (max-width: 1100px) and (min-width: 992px) {
       font-size: 16px;
+    }
+
+    @media(hover: hover) {
+      &:hover{
+        color: #0064C8;
+      }
     }
   }
 }
@@ -155,11 +169,11 @@
     width: 75%;
   }
 
-  &::before{
+  &::before {
     transform: translateY(-15px);
   }
 
-  &::after{
+  &::after {
     width: 50%;
     transform: translateY(15px);
   }
@@ -168,16 +182,16 @@
     display: none;
   }
 
-  &.active{
-    span{
+  &.active {
+    span {
       opacity: 0;
     }
 
-    &::before{
+    &::before {
       transform: rotate(45deg);
     }
 
-    &::after{
+    &::after {
       transform: rotate(-45deg);
       width: 100%;
     }

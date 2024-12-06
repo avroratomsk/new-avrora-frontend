@@ -3,6 +3,9 @@
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap-grid';
 
+// import styles bundle
+@import '../../node_modules/swiper/swiper';
+
 // Шрифты
 // Удалить файл fonts.scss, если произошли какие-то изменения со шрифтами
 @import "fonts";
@@ -13,6 +16,9 @@
 @import "_header";
 @import "_footer";
 @import "_global";
+@import "_hero";
+
+@import "./components/fixed-contact";
 
 *{
   outline: none;
@@ -24,6 +30,7 @@ html {
 }
 
 body{
+  //background: #181818;
   background: #001727;
   margin: 0;
   padding: 0;
@@ -33,8 +40,8 @@ body{
   min-width: 360px;
   overflow-x: hidden;
   font-family: $main_font;
+
   main {
     flex: 1 0 auto;
-    padding: 30px 0;
   }
 }
