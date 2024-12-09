@@ -113,28 +113,21 @@ if (document.getElementById('canvas')) {
   }
 
   function resize() {
-
     scale = window.devicePixelRatio || 1;
-
     width = window.innerWidth * scale;
     height = window.innerHeight * scale;
 
     canvas.width = width;
     canvas.height = height;
-
     stars.forEach(placeStar);
-
   }
 
   function step() {
-
     context.clearRect(0, 0, width, height);
-
     update();
     render();
 
     requestAnimationFrame(step);
-
   }
 
   function update() {

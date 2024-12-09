@@ -17,6 +17,7 @@
 @import "_footer";
 @import "_global";
 @import "_hero";
+@import "_service";
 
 @import "./components/fixed-contact";
 
@@ -30,8 +31,8 @@ html {
 }
 
 body{
-  //background: #181818;
-  background: #001727;
+  background: #181818;
+  //background: #001727;
   margin: 0;
   padding: 0;
   display: flex;
