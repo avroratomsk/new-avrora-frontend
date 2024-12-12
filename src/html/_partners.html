@@ -1,0 +1,18 @@
+<section class="block-4 whiteT wrapper partners" id="partners">
+  <div class="container">
+    <div class="partners__inner inner">
+      <h3 class="partners__title">Партнеры</h3>
+
+      <div class="partners__grid">
+        @@for (var i = 0; i < 15; i++) {
+        <a itemscope itemtype="http://schema.org/ImageObject" rel="nofollow" href="[[+url]]" class="partners__item"
+           target="_blank">
+          <img itemprop="contentUrl" loading="lazy" src="@img/fitavto.webp" class="partners__img" alt="[[+name]]">
+          <meta itemprop="name" content="[[+name]]">
+          <meta itemprop="description" content="Партнер компании [[+name]]">
+        </a>
+        }
+      </div>
+    </div>
+  </div>
+</section>
