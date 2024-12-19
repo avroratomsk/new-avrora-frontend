@@ -1,39 +1,57 @@
 <footer class="footer" itemscope="" itemtype="http://schema.org/WPFooter">
   <div class="container">
-    <meta itemprop="copyrightYear" content="2023">
-    <meta itemprop="copyrightHolder" content="Аврора - рекламное агентство">
-    <div class="footer__col">
-      <p class="footer__title">О нас</p>
-
-      <div class="footer__about">[[#2.description]]</div>
-      <a href="[[~2]]" class="footer__about-link">Читать больше...</a>
-      <div class="footer__pol-wrap">
-        <a href="[[~9]]" class="footer__pol">[[#9.pagetitle]]</a>
+    <div class="footer__row">
+      <meta itemprop="copyrightYear" content="2023">
+      <meta itemprop="copyrightHolder" content="Аврора - рекламное агентство">
+      <div class="footer__col">
+        <p class="footer__title">О нас</p>
+        <div class="footer__about">Аврора - рекламное агентство цифрового маркетинга с полным комплексом услуг.</div>
+        <a href="[[~2]]" class="footer__about-link">Читать больше...</a>
+        <div class="footer__pol-wrap">
+          <a href="[[~9]]" class="footer__pol">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__logo-wrap">
+          <img src="@img/logo.svg" alt="Аврора - рекламное агентство" class="footer__logo">
+        </div>
       </div>
+      <div class="footer__col">
+        <p class="footer__title">Контакты</p>
+        <p class="footer__contact">Адрес</p>
+        <p class="footer__contact-link">Томск</p>
+        <p class="footer__contact">Почта</p>
+        <a href="mailto:[[#8.email]]" class="footer__contact-link mail-hide">avroratomsk70@yandex.ru</a>
+        <p class="footer__contact">Телефон</p>
+        <a href="tel:[[#8.phone]]" class="footer__contact-link">8(999) 999 99 99</a>
 
-
-      <div class="footer__logo-wrap">
-        <img src="@img/logo.svg" alt="Аврора - рекламное агентство" class="footer__logo">
       </div>
-    </div>
-    <div class="footer__col">
-      <p class="footer__title">Контакты</p>
-      <p class="footer__contact">Адрес</p>
-      Томск
-
-      <p class="footer__contact">Почта</p>
-      <a href="mailto:[[#8.email]]" class="footer__contact-link mail-hide">avroratomsk70@yandex.ru</a>
-      <p class="footer__contact">Телефон</p>
-      <a href="tel:[[#8.phone]]" class="footer__contact-link">8(999) 999 99 99</a>
-
-    </div>
-    <div class="footer__col">
-      <p class="footer__title">Обратная связь</p>
-
-    </div>
-    <div class="footer__col">
-      <p class="footer__title">Статьи</p>
-
+      <div class="footer__col">
+        <p class="footer__title">Обратная связь</p>
+        <form action="[[~[[*id]]]]" class="footer__form" method="POST" autocomplete="off">
+          <input type="hidden" name="page" value="[[*Title:isnot=``:then=`[[*Title]]`:else=`[[*pagetitle]]`]]">
+          <input type="hidden" name="form_name" value="Форма Обратная связь в подвале сайта">
+          <input name="name" class="footer__input" type="text" placeholder="Имя" required="">
+          <input name="phone" class="footer__input" type="tel" placeholder="Телефон" required="">
+          <textarea name="message" cols="30" rows="5" class="footer__input" placeholder="Сообщение"
+                    required=""></textarea>
+          <button class="footer__btn">Отправить</button>
+        </form>
+        <button type="button" class="footer__btn">Оставиь заявку</button>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">Статьи</p>
+        <div class="footer__news">
+          <p class="footer__news-title">Барнаул</p>
+          <p class="footer__news-desc"></p>
+          <p class="footer__news-date">28 ноября 2024 г. 6:46</p>
+          <a href="blog-brn/" class="footer__news-link">Читать...</a>
+        </div>
+        <div class="footer__news">
+          <p class="footer__news-title">Барнаул</p>
+          <p class="footer__news-desc"></p>
+          <p class="footer__news-date">28 ноября 2024 г. 6:46</p>
+          <a href="blog-brn/" class="footer__news-link">Читать...</a>
+        </div>
+      </div>
     </div>
   </div>
   </div>

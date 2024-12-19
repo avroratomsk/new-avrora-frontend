@@ -9,54 +9,75 @@
   z-index: 85;
   bottom: 0;
   overflow: hidden;
-}
-.footer .container {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.footer__inner {
-  display: flex;
-  gap: 20px;
-}
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 
-.footer__col {
-  width: 100%;
-  max-width: 25%;
-  z-index: 86;
-}
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-.footer__title {
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+    @media screen and (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+  }
 
-.footer__about {
-  margin-bottom: 10px;
-  color: rgb(166, 166, 166);
-}
+  &__col {
+    width: 100%;
+    //max-width: 25%;
+    //z-index: 86;
+  }
 
-.footer__pol {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-}
+  &__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
 
-.footer__pol:hover {
-  color: #e10000;
+  &__about {
+    margin-bottom: 10px;
+    color: rgb(166, 166, 166);
+  }
+
+  &__pol {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+
+    @media (hover:hover) {
+      &:hover {
+        color: #e10000;
+      }
+    }
+  }
+
+  &__about-link {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 70;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    @media screen and (min-width: 576px) {
+      display: none;
+    }
+  }
 }
 
 .footer__logo-wrap {
   margin-top: 120px;
-}
 
-.footer__about-link {
-  color: #fff;
-  text-decoration: underline;
-  font-size: 14px;
-  font-weight: 70;
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
+footer__form
 
 .footer__about-link:hover {
   color: #e10000;
@@ -140,6 +161,10 @@
   max-width: fit-content;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
 
 .footer__input {
@@ -178,7 +203,10 @@
   display: inline-block;
   width: fit-content;
   font-weight: 700;
-  margin-top: 20px;
+
+  @media screen and (min-width: 576px) {
+    margin-top: 20px;
+  }
 }
 
 .footer__lines {
@@ -465,6 +493,7 @@
 }
 
 .footer canvas {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;

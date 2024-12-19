@@ -1,0 +1,37 @@
+<div id="callback" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close"></button>
+      <h2 class="popup__title">Напишите нам</h2>
+      <form action="[[~[[*id]]]]" class="popup__form" method="POST" [[*id:is=`5`:then=`enctype="multipart/form-data"`]]
+            autocomplete="off">
+        <input type="hidden" name="page" value="[[*Title:isnot=``:then=`[[*Title]]`:else=`[[*pagetitle]]`]]">
+        <input type="hidden" name="form_name" value="Форма Напишите нам во всплывающем окне">
+        <label class="popup__label">
+          <span>Имя</span>
+          <input type="text" name="name" class="popup__input" placeholder="Алексей Иванов" id="c_name" required="">
+        </label>
+
+        <input type="text" name="surname" class="popup__input surname" placeholder="Алексей Иванов" id="c_surname">
+
+        <label class="popup__label">
+          <span>Телефон</span>
+          <input type="tel" name="phone" class="popup__input" placeholder="+7 (  )" id="c_phone" required="">
+        </label>
+
+        <label class="popup__label">
+          <span>Сообщение</span>
+          <textarea name="message" cols="40" rows="10" class="popup__input popup__textarea" placeholder="Введите текст"
+                    id="c_text" required=""></textarea>
+        </label>
+
+<!--        [[*id:is=`5`:then=`<input type="file" name="file">`]]-->
+
+        <input type="text" name="check" hidden value="check">
+        <p class="popup__access">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+          <a href="[[~9]]">политикой конфиденциальности</a>.</p>
+        <button type="submit" class="popup__submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>

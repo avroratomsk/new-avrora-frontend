@@ -1,8 +1,6 @@
 .partners {
+  padding: 0px 0px 80px 0;
   background-color: #d8dadf;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 0 80px 0;
 }
 
 .partners__title {
@@ -23,6 +21,8 @@
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   background-color: #fff;
   width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .partners__item {
@@ -31,6 +31,7 @@
   justify-content: center;
   padding: 20px;
   height: 150px;
+
   border: 1px solid #e8eaee;
 
   @media (hover:hover) {

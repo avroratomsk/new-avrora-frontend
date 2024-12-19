@@ -21,8 +21,10 @@
 @import "_partners";
 @import "_about";
 @import "_advantages";
+@import "_isMobile";
 
 @import "./components/fixed-contact";
+@import "./components/popup";
 
 *{
   outline: none;

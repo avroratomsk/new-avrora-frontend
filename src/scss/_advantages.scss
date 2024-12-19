@@ -7,66 +7,84 @@
   background-color: #d8dadf;
   padding: 180px 0;
 
-
+  @media screen and (max-width: 992px) {
+    padding: 80px 0px;
+  }
 
   &__title {
     font-size: 32px;
     line-height: 120%;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media screen and (max-width: 992px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 23px;
+    }
   }
 
-  //span {
-  //  width: 100%;
-  //  transform: translateY(-50px);
-  //  opacity: 0;
-  //}
-
-  //.animateIn span {
-  //  animation-name: animateIn;
-  //  animation-timing-function: ease;
-  //  animation-duration: 0.5s;
-  //  transform: translateY(0);
-  //  opacity: 1;
-  //  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-  //}
-  //
-  //.animateOut span {
-  //  animation-name: animateOut;
-  //  animation-timing-function: ease;
-  //  animation-duration: 0.5s;
-  //  transform: translateY(50px);
-  //  opacity: 0;
-  //  clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
-  //}
-
   &__grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px 100px;
+    z-index: 2;
+
+    @media screen and (max-width: 1200px) {
+      gap: 30px 50px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 50px 50px;
+    }
+
+    @media screen and (max-width: 425px) {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
   }
 
-  &__item{
-    &:nth-child(even){
-      margin-top: 150px;
+  &__item {
+    @media screen and (min-width: 992px) {
+      &:nth-child(even) {
+        margin-top: 150px;
+      }
+    }
+
+
+
+    @media (hover: hover) {
+      &:hover {
+        .advantages__text {
+          opacity: 1;
+        }
+      }
     }
   }
 
   &__text {
-    opacity: 1;
+    opacity: 0;
     margin-top: 20px;
     transition: all 0.5s ease;
     padding: 40px;
     width: 100%;
-    //max-width: 672px;
     align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
+    text-wrap: balance;
     background-color: #fff;
+    border-radius: 20px;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      padding: 25px;
+    }
+
   }
-
-
 }
 
 @keyframes animateIn {
@@ -97,8 +115,11 @@
   }
 }
 
-.benefits_
-
-.benefits__text:hover .benefits__title-item {
-  //color: #e10000;
+.particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
