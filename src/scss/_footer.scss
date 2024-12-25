@@ -74,6 +74,8 @@
     display: inline-block;
     width: fit-content;
     font-weight: 700;
+    border-radius: 10px;
+    align-self: flex-end;
 
     @media screen and (min-width: 576px) {
       margin-top: 20px;

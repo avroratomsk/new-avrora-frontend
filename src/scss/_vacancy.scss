@@ -1,0 +1,135 @@
+.vacancy {
+  padding: 100px 0px 0px;
+
+  &__title--small {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+
+  &__inner {
+  }
+
+  &__row {
+    display: flex;
+    gap: 30px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    padding: 50px;
+    border: 1px solid rgba($color: #ffffff, $alpha: .3);
+    border-radius: 10px;
+
+    @media screen and (min-width: 992px) {
+      flex: 0 1 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 25px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    font-size: 50px;
+    line-height: 160%;
+
+    @media screen and (max-width: 1443px) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &__title-small {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+
+      a{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+.vacansies {
+  padding: 70px 0px 100px;
+
+  &__title {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    border: 1px solid rgba($color: #ffffff, $alpha: .3);
+    border-radius: 10px;
+
+    @media screen and (min-width: 992px) {
+      flex: 0 1 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 25px;
+    }
+  }
+
+  &__title-item {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 18px;
+
+    ul {
+      padding-left: 40px;
+
+      li {
+        list-style: disc;
+        line-height: 140%;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

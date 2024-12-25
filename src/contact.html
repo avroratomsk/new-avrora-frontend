@@ -7,32 +7,7 @@
 @@include('html/_header.html')
 
 <main>
-  <section class="video-banner">
-    <div class="container">
-      <div class="video-banner__inner">
-        <div class="video-banner__col video-banner__mini">
-          Профессиональный штат <br> сотрудников
-        </div>
-        <div class="video-banner__col">
-          <div class="video-banner__big">
-            <h1 class="title fullscreen__text animateIn">
-              <span>Маркетинговое </span><br><span>агентство </span><br><span>в Томске</span></h1>
-          </div>
-          <div class="video-banner__wrapper">
-            <a href="#" class="btn show-popup serv-button">Заказать</a>
-            <p hidden="">Создание сайтов</p>
-            <a href="[[~37]]" class="btn brif__btn">Заполнить бриф</a>
-            <a href="[[~[[*id]]]]#price" class="btn btn--empty">Смотреть цены</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <video autoplay muted loop class="video-banner__img">
-      <source src="https://avrora-agency.ru/static/video/earth.mp4">
-    </video>
-  </section>
-
-  <section class="text-column">
+  <section class="contact">
     <div class="container">
       <div class="breadcrumbs [[+mini:is=`1`:then=``]]">
         <div class="breadcrumbs__inner [[+static:is=`1`:then=`breadcrumbs__inner--static`]]">
@@ -45,48 +20,13 @@
             </li>
             <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
               <a class="breadcrumbs__link" href="[[+link]]" title="[[+menutitle]]" itemprop="item">
-                <span itemprop="name">Агенство</span>
+                <span itemprop="name">Контакты</span>
                 <meta itemprop="position" content="2">
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="text-column__inner">
-        <div class="column-text">
-          <div class="column-text__item [[+url:isnot=``:then=`list__item--minus`]]">
-            <a target="_blank" rel="nofollow" href="[[+url]]" class="column-text__wrap column-text__wrap--link">
-              <h2 class="column-text__title">Профессиональный штат сотрудников</h2>
-              <div class="column-text__text">
-                Наша команда сотрудников состоит из профессиональных маркетологов, дизайнеров, разработчиков и
-                программистов. Мы предлагаем агрессивную стратегию полного обслуживания для каждого из наших клиентов,
-                где используем комбинацию комплексного цифрового продвижения для увеличения видимости, конверсии и
-                дохода.
-              </div>
-            </a>
-          </div>
-          <div class="column-text__item [[+url:isnot=``:then=`list__item--minus`]]">
-            <div class='column-text__wrap'>
-              <h2 class="column-text__title">Лучшие решения для увеличения продаж</h2>
-              <div class="column-text__text">
-                Если вы выберете нас в качестве маркетингового агентства в Томске для продвижения вашего бизнеса в
-                цифровом маркетинге, вы получите индивидуальный план, который соответствует вашей компании, вашим
-                потребностям и целям.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--        <h2 class="keys__title animateOut">-->
-        <!--          <span>Маркетинговое </span><br>-->
-        <!--          <span>агентство</span>-->
-        <!--        </h2>-->
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="contact">
-    <div class="container">
       <div class="contact__inner">
         <h1 class="contact__title">Контакты</h1>
         <div class="contact__row">

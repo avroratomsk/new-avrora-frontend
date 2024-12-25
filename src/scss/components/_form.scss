@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    span {
+      font-size: 10px;
+      line-height: 160%;
+      position: absolute;
+      top: 20px;
+      left: 24px;
+      font-weight: 700;
+      color: #001727;
+    }
+  }
+
+  & input {
+    min-height: 80px;
+  }
+
+  & textarea {
+    resize: none;
+    margin-bottom: 20px;
+    height: 200px;
+  }
+
+  &__input {
+    width: 100%;
+    background: none;
+    font-size: 17px;
+    border: 1px solid rgba(0, 23, 39, 0.2);
+    width: 100%;
+    padding: 39px 24px 14px;
+    transition: all 0.25s;
+    outline: none;
+  }
+
+  &__input:focus {
+    background-color: #fff;
+  }
+
+  &__access {
+    line-height: 150%;
+    font-size: 13px;
+    color: #9098b1;
+    margin-bottom: 10px;
+
+    a {
+      color: #e10000;
+    }
+  }
+
+  &__submit {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #c4c8d2;
+    border-color: #c4c8d2;
+    color: #000;
+    min-width: 224px;
+    height: 56px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.25s;
+  }
+}

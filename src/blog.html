@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"FrontEnd Avrora"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <section class="video-banner">
+    <div class="container">
+      <div class="video-banner__inner">
+        <div class="video-banner__col video-banner__mini">
+          Профессиональный штат <br> сотрудников
+        </div>
+        <div class="video-banner__col">
+          <div class="video-banner__big">
+            <h1 class="title fullscreen__text animateIn">
+              <span>Новости, </span><br>
+              <span class="md-none">статьи </span><br>
+              <span class="md-none">и полезная </span><br>
+              <span class="md-none">информация</span>
+            </h1>
+          </div>
+          <div class="video-banner__wrapper">
+            <a href="#" class="btn show-popup serv-button">Заказать</a>
+            <p hidden="">Создание сайтов</p>
+            <a href="[[~37]]" class="btn brif__btn">Заполнить бриф</a>
+            <a href="[[~[[*id]]]]#price" class="btn btn--empty">Смотреть цены</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+  </section>
+  <div class="blog">
+    <!-- <h1 class="keys__title animateOut">
+        <span>Полезные </span><br><span>статьи и </span><br><span>новости</span>
+    </h1> -->
+    <div class="blog__grid">
+      <div class="blog__article article article--first">
+        <a href="[[~[[+id]]]]" class="article__image">
+          <img src="@img/seo.jpg" alt="">
+        </a>
+        <div class="article__content">
+          <a href="[[~[[+id]]]]" class="article__title">[[+pagetitle]]</a>
+          <p class="article__text">
+            [[+description]]
+          </p>
+          <div class="article__inner">
+            <div class="article__tag">
+              [[TaggerGetTags?
+              &resources=`[[+id]]`
+              &rowTpl=`TagTpl`
+              ]]
+            </div>
+            <div class="article__date">
+              <p>[[+publishedon:dateRU]]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+@@include('html/_footer.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

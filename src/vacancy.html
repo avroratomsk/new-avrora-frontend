@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"FrontEnd Avrora"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <div class="vacancy">
+    <div class="container">
+      <div class="breadcrumbs [[+mini:is=`1`:then=``]]">
+        <div class="breadcrumbs__inner [[+static:is=`1`:then=`breadcrumbs__inner--static`]]">
+          <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="breadcrumbs__link" href="[[+link]]" title="[[+menutitle]]" itemprop="item">
+                <span itemprop="name">Главная</span>
+                <meta itemprop="position" content="1">
+              </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="breadcrumbs__link" href="[[+link]]" title="[[+menutitle]]" itemprop="item">
+                <span itemprop="name">Исполнителям</span>
+                <meta itemprop="position" content="2">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="vacancy__inner">
+        <h1 class="vacancy__title--small">Исполнителям</h1>
+        <div class="vacancy__row">
+          <div class="vacancy__col">
+            <h3 class="vacancy__title">УСЛОВИЯ СОТРУДНИЧЕСТВА ДЛЯ ИСПОЛНИТЕЛЕЙ И РЕГУЛИРУЮЩИЕ ДОКУМЕНТЫ</h3>
+            <div class="vacancy__wrap">
+              <a href="[[~10]]" class="btn" target="_blank">Пользовательское соглашение</a>
+              <a href="[[~9]]" class="btn" target="_blank">Политика конфиденциальности</a>
+            </div>
+          </div>
+          <div class="vacancy__col">
+            <h2 class="vacancy__title-small">Для взаимодействия с разработчиком заполните форму или позвоните по телефону 8 (913) 888-75-94</h2>
+            <div class="vacancy__wrap">
+              <form action="[[~[[*id]]]]" class="form" method="POST" autocomplete="off">
+                <input type="hidden" name="page" value="[[*Title:isnot=``:then=`[[*Title]]`:else=`[[*pagetitle]]`]]">
+                <input type="hidden" name="form_name" value="Форма на странице 'Исполнителям'">
+                <div class="contact__wrap">
+                  <label class="form__label">
+                    <span>Имя</span>
+                    <input type="text" name="name" class="form__input" placeholder="Алексей Иванов" required="">
+                  </label>
+
+                  <!--                <input type="text" name="surname" class="form__input surname" placeholder="Алексей Иванов"-->
+                  <!--                       id="c_surname">-->
+
+                  <label class="form__label">
+                    <span>Телефон</span>
+                    <input type="tel" name="phone" class="form__input" placeholder="+7 (  )" required="">
+                  </label>
+                </div>
+                <div class="contact__wrap">
+                  <label class="form__label">
+                    <span>Город</span>
+                    <input type="text" name="city" class="form__input" placeholder="Томск" required="">
+                  </label>
+                  <label class="form__label">
+                    <span>Адрес эл. почты</span>
+                    <input type="email" name="email" class="form__input" placeholder="ivanov@gmail.com" required="">
+                  </label>
+                </div>
+
+                <label class="form__label">
+                  <span>Сообщение</span>
+                  <textarea name="message" cols="40" rows="10" class="form__input form__textarea"
+                            placeholder="Введите текст" required=""></textarea>
+                </label>
+                <input type="text" name="check" hidden="" value="check">
+
+                <div class="contact__wrap">
+                  <p class="form__access">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                    соглашаетесь с <a href="[[~9]]">политикой конфиденциальности</a>.</p>
+                  <button class="form__submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="vacansies">
+          <h2 class="vacansies__title">Какие направления нас интересуют</h2>
+          <div class="vacansies__grid">
+            <div class="vacansies__item">
+              <h2 class="vacansies__title-item">Копирайтинг</h2>
+              <div class="vacansies__text">
+                <p><strong>Обязанности:</strong></p>
+                <ul>
+                  <li>
+                    <span>Управление репутацией на рекомендательных ресурсах в сети интернет (форумы, отзовики, агрегаторы, справочники и т.д.);</span>
+                  </li>
+                  <li>
+                    <span>Прямая работа с отзывами (написание и публикация положительных отзывов по тех. заданию, отработка негатива).</span>
+                  </li>
+                </ul>
+                <p><strong>Цели:</strong></p>
+                <ul>
+                  <li>
+                    <p><span>Укрепление бренда наших партнеров;</span></p>
+                  </li>
+                  <li>
+                    <p><span>Повышение узнаваемости и лояльности аудитории;</span></p>
+                  </li>
+                  <li>
+                    <p><span>Поисковая оптимизация.</span></p>
+                  </li>
+                </ul>
+                <p><strong>Требования:</strong></p>
+                <ul>
+                  <li><span>Умение писать продающие тексты;</span></li>
+                  <li>
+                    <p><span>Хорошее знание орфографии и пунктуации;</span></p>
+                  </li>
+                  <li>
+                    <p><span>Многозадачность (умение работать над несколькими задачами одновременно).</span></p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="btn vacansie__btn" data-popup="">Откликнуться</a>
+            </div>
+            <div class="vacansies__item">
+              <h2 class="vacansies__title-item">Копирайтинг</h2>
+              <div class="vacansies__text">
+                <p><strong>Обязанности:</strong></p>
+                <ul>
+                  <li>
+                    <span>Управление репутацией на рекомендательных ресурсах в сети интернет (форумы, отзовики, агрегаторы, справочники и т.д.);</span>
+                  </li>
+                  <li>
+                    <span>Прямая работа с отзывами (написание и публикация положительных отзывов по тех. заданию, отработка негатива).</span>
+                  </li>
+                </ul>
+                <p><strong>Цели:</strong></p>
+                <ul>
+                  <li>
+                    <p><span>Укрепление бренда наших партнеров;</span></p>
+                  </li>
+                  <li>
+                    <p><span>Повышение узнаваемости и лояльности аудитории;</span></p>
+                  </li>
+                  <li>
+                    <p><span>Поисковая оптимизация.</span></p>
+                  </li>
+                </ul>
+                <p><strong>Требования:</strong></p>
+                <ul>
+                  <li><span>Умение писать продающие тексты;</span></li>
+                  <li>
+                    <p><span>Хорошее знание орфографии и пунктуации;</span></p>
+                  </li>
+                  <li>
+                    <p><span>Многозадачность (умение работать над несколькими задачами одновременно).</span></p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="btn vacansie__btn" data-popup="">Откликнуться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+@@include('html/_footer.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

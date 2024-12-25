@@ -22,10 +22,16 @@
 @import "_about";
 @import "_advantages";
 @import "_isMobile";
+@import "_contact";
+@import "_vacancy";
+
+
 @import "agency/agency";
 
 @import "./components/fixed-contact";
 @import "./components/popup";
+@import "./components/_form";
+@import "./components/_breadcrumbs";
 
 *{
   outline: none;
@@ -37,7 +43,7 @@ html {
 }
 
 body{
-  background: #181818;
+  background: #d8dadf;
   //background: #001727;
   margin: 0;
   padding: 0;
