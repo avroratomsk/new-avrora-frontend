@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"FrontEnd Avrora"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <div class="article">
+    <div class="container">
+      <div class="article__image">
+        <img src="@img/seo.jpg" alt="">
+      </div>
+      <div class="breadcrumbs [[+mini:is=`1`:then=``]]">
+        <div class="breadcrumbs__inner [[+static:is=`1`:then=`breadcrumbs__inner--static`]]">
+          <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="breadcrumbs__link" href="[[+link]]" title="[[+menutitle]]" itemprop="item">
+                <span itemprop="name">Главная</span>
+                <meta itemprop="position" content="1">
+              </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="breadcrumbs__link" href="[[+link]]" title="[[+menutitle]]" itemprop="item">
+                <span itemprop="name">Блог</span>
+                <meta itemprop="position" content="2">
+              </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="breadcrumbs__link" href="[[+link]]" title="[[+menutitle]]" itemprop="item">
+                <span itemprop="name">Секрет успешной рекламы</span>
+                <meta itemprop="position" content="2">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="article__container">
+      <div class="article__text">
+        <h1>СЕКРЕТЫ УСПЕШНОЙ РЕКЛАМЫ</h1>
+
+        <h2>Секрет № 1 – простота</h2>
+        <p>
+          Это очень важное, но, не смотря на это, наиболее часто не принимаемое во внимание правило дизайна. Секрет
+          кроется в том, что простая, не перегруженная информацией в виде текстов и изображений реклама намного легче
+          воспринимается.
+        </p>
+        <h2>Секрет № 2 - обращение к целевой аудитории</h2>
+        <p>
+          Не пытайтесь делать широко направленную рекламу. Составляйте рекламу таким образом, чтобы она была направлена
+          на
+          целевую аудиторию. Благодаря этому реклама будет более эффективной и соответственно успешной.
+        </p>
+        <h2>Секрет № 3 - привлечение внимания и уникальность</h2>
+        <p>
+          В рекламе не нужно делать все так, как это принято в реальной жизни. В детстве всем говорили, что вишня
+          красная,
+          а лимон желтый. И если кто-то раскрашивал их “неправильным” цветом, то на это обращали внимание и исправляли
+          на
+          “правильный” красный и желтый цвет. Но как только все было нарисовано “так как надо”, рисунок сразу, терялся
+          среди огромного множества таких же “правильных” рисунков.
+        </p>
+
+        <img src="@img/seo.jpg" alt="">
+
+        <h3>Секрет № 4 - акцент на проблемах потребителей</h3>
+        <p>
+          Люди всегда ищут пути сделать что-то как можно легче. Делайте рекламу, которая поможет решить определенные
+          проблемы потребителей.
+        </p>
+
+        <ul>
+          <li>“Устали следить за собственным весом?”</li>
+          <li>“Хотите быть сами себе начальником?”</li>
+          <li>“Хотите, чтобы счет за сотовый телефон был меньше?”</li>
+          <li>“Недовольны своим внешним видом?”</li>
+        </ul>
+
+        <h2>Секрет № 5 - призыв к действию</h2>
+        <p>
+          Не забудьте рассказать людям, что же вы от них хотите. Не бойтесь в конце рекламы сказать: “Купите прямо
+          сейчас”, “Звоните сегодня!” или “Посетите наш магазин.” и т.п.
+        </p>
+        <blockquote>
+          В рекламах используют особые способы убеждения потребителя. Это специальные так называемые силовые слова. Но
+          как
+          же на самом деле эти слова, заставляют нас покупать? Эта статья покажет вам выбрать силовые, весомые и
+          убедительные слова для рекламы.
+        </blockquote>
+      </div>
+      <div class="article__action">
+        <button type="button" class="btn article__btn">Оставить заявку</button>
+        <p class="article__mail">Для связи: <a href="">avroratomsk70@yandex.ru</a></p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+@@include('html/_footer.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
