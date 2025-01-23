@@ -1,5 +1,13 @@
+.kejsy{
+  .video-banner {
+    video {
+      opacity: .7;
+    }
+  }
+}
+
 .works {
-  padding: 150px 0px 100px;
+  padding: 0px 0px 100px;
 
   &__inner {
     display: grid;
@@ -15,14 +23,7 @@
 
 .work {
   padding: 30px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 20px;
   text-decoration: none;
@@ -130,6 +131,10 @@
 .work__image img {
   width: 597px;
   height: 300px;
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1300px){
