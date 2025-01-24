@@ -61,3 +61,19 @@ button {
 ._lock {
   overflow: hidden;
 }
+
+.animate-title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 6.25vw;
+  line-height: 1;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: all 1s ease;
+}
