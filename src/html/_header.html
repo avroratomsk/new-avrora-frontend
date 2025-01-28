@@ -17,7 +17,7 @@
             <a class="nav__link" href="/[[~3]]" itemprop="url">Кейсы</a>
             <meta itemprop="name" content="[[#3.pagetitle]]"/>
           </li>
-          <li class="nav__item" itemprop="itemListElement" itemscope=""
+          <li class="nav__item" id="service" itemprop="itemListElement" itemscope=""
               itemtype="http://schema.org/ItemList">
             <a class="nav__link" href="#servise" itemprop="url">Услуги</a>
             <meta itemprop="name" content="[[#4.pagetitle]]"/>
@@ -59,57 +59,93 @@
   </div>
 </header>
 
-<!--<div class="menu">-->
 
-<!--  <div class="menu__inner">-->
-<!--    <nav class="menu__nav" itemscope="" itemtype="http://schema.org/SiteNavigationElement">-->
-<!--      <div class="menu__list">-->
-<!--        [[pdoResources?-->
-<!--        &parents=`4`-->
-<!--        &depth=`0`-->
-<!--        &tpl=`menuItem`-->
-<!--        &sortdir=`ASC`-->
-<!--        ]]-->
-<!--      </div>-->
-<!--    </nav>-->
-<!--  </div>-->
-<!--  <a href="#" class="menu__closer">-->
-<!--    <div class="menu__closer-inner"></div>-->
-<!--  </a>-->
 
-<!--  <div class="menu__lines">-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--    <div class="menu__col"></div>-->
-<!--  </div>-->
+<div class="menu" id="service-menu">
+  <div class="menu__inner">
+    <nav class="menu__nav" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+      <div class="menu__list">
+        <ul itemprop="about" itemscope="" itemtype="http://schema.org/ItemList" class="menu__row">
+          <li><p class="menu__title">Разработка</p></li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Создание сайтов</a>
+            <meta itemprop="name" content="[[+pagetitle]]" />
+          </li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Техническая поддержка</a>
+            <meta itemprop="name" content="[[+pagetitle]]" />
+          </li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Высокоскоростной хостинг</a>
+            <meta itemprop="name" content="[[+pagetitle]]" />
+          </li>
+        </ul>
+        <ul itemprop="about" itemscope="" itemtype="http://schema.org/ItemList" class="menu__row">
+          <li><p class="menu__title">Реклама</p></li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Контекстная реклама</a>
+            <meta itemprop="name" content="[[+pagetitle]]" />
+          </li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Таргетированная реклама</a>
+            <meta itemprop="name" content="[[+pagetitle]]" />
+          </li>
+        </ul>
+        <ul itemprop="about" itemscope="" itemtype="http://schema.org/ItemList" class="menu__row">
+          <li><p class="menu__title">Продвижение</p></li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Улучшение продающих качеств сайта</a>
+            <meta itemprop="name" content="[[+pagetitle]]"/>
+          </li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Поисковое продвижение сайтов (SEO)</a>
+            <meta itemprop="name" content="[[+pagetitle]]"/>
+          </li>
+          <li class="menu__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+            <a class="menu__link" href="[[~[[+id]]]]" itemprop="url">Продвижение на рекомендательных ресурсах (SERM)</a>
+            <meta itemprop="name" content="[[+pagetitle]]"/>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <a href="#" class="menu__closer" id="close-service-menu">
+    <div class="menu__closer-inner"></div>
+  </a>
 
-<!--  <div class="menu__bg"></div>-->
-<!--</div>-->
+  <div class="menu__lines">
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+    <div class="menu__col"></div>
+  </div>
 
-<!--<div class="preloader">-->
-<!--    <div class="preloader__bg"></div>-->
-<!--    <div class="preloader__container-wrap">-->
-<!--        <div class="preloader__container">-->
-<!--            <div class="view">-->
-<!--                <div class="plane main">-->
-<!--                  <div class="circle"></div>-->
-<!--                  <div class="circle"></div>-->
-<!--                  <div class="circle"></div>-->
-<!--                  <div class="circle"></div>-->
-<!--                  <div class="circle"></div>-->
-<!--                  <div class="circle"></div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+  <div class="menu__bg"></div>
+</div>
+
+<div class="preloader">
+    <div class="preloader__bg"></div>
+    <div class="preloader__container-wrap">
+        <div class="preloader__container">
+            <div class="view">
+                <div class="plane main">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
 
 <!--[[*id:is=`1`:then=`-->
 <div class="fixed-contact">

@@ -9,33 +9,34 @@ import "./modules/popup.js";
 // import Swiper bundle with all modules installed
 import {EffectFade, Navigation, Pagination, Autoplay} from 'swiper/modules';
 import Swiper from 'swiper';
+import {bodyLock} from "./modules/functions.js";
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination, EffectFade, Autoplay],
   effect: "fade",
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 1000,
   },
 });
 
 const isMobile = {
-  Android: function() {
+  Android: function () {
     return navigator.userAgent.match(/Android/i);
   },
-  BlackBerry: function() {
+  BlackBerry: function () {
     return navigator.userAgent.match(/BlackBerry/i);
   },
-  iOS: function() {
+  iOS: function () {
     return navigator.userAgent.match(/iPhone|iPad|iPod/i);
   },
-  Opera: function() {
+  Opera: function () {
     return navigator.userAgent.match(/Opera Mini/i);
   },
-  Windows: function() {
+  Windows: function () {
     return navigator.userAgent.match(/IEMobile/i);
   },
-  any: function() {
+  any: function () {
     return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
   }
 };
@@ -47,8 +48,8 @@ var VanillaTilt = function () {
     constructor(e, i = {}) {
       if (!(e instanceof Node)) throw "Can't initialize VanillaTilt because " + e + " is not a Node.";
       this.width = null,
-      this.height = null,
-      this.clientWidth = null, this.clientHeight = null, this.left = null, this.top = null, this.gammazero = null, this.betazero = null, this.lastgammazero = null, this.lastbetazero = null, this.transitionTimeout = null, this.updateCall = null, this.event = null, this.updateBind = this.update.bind(this), this.resetBind = this.reset.bind(this), this.element = e, this.settings = this.extendSettings(i), this.reverse = this.settings.reverse ? -1 : 1, this.glare = t.isSettingTrue(this.settings.glare), this.glarePrerender = t.isSettingTrue(this.settings["glare-prerender"]), this.fullPageListening = t.isSettingTrue(this.settings["full-page-listening"]), this.gyroscope = t.isSettingTrue(this.settings.gyroscope), this.gyroscopeSamples = this.settings.gyroscopeSamples, this.elementListener = this.getElementListener(), this.glare && this.prepareGlare(), this.fullPageListening && this.updateClientSize(), this.addEventListeners(), this.reset(), this.updateInitialPosition()
+        this.height = null,
+        this.clientWidth = null, this.clientHeight = null, this.left = null, this.top = null, this.gammazero = null, this.betazero = null, this.lastgammazero = null, this.lastbetazero = null, this.transitionTimeout = null, this.updateCall = null, this.event = null, this.updateBind = this.update.bind(this), this.resetBind = this.reset.bind(this), this.element = e, this.settings = this.extendSettings(i), this.reverse = this.settings.reverse ? -1 : 1, this.glare = t.isSettingTrue(this.settings.glare), this.glarePrerender = t.isSettingTrue(this.settings["glare-prerender"]), this.fullPageListening = t.isSettingTrue(this.settings["full-page-listening"]), this.gyroscope = t.isSettingTrue(this.settings.gyroscope), this.gyroscopeSamples = this.settings.gyroscopeSamples, this.elementListener = this.getElementListener(), this.glare && this.prepareGlare(), this.fullPageListening && this.updateClientSize(), this.addEventListeners(), this.reset(), this.updateInitialPosition()
     }
 
     static isSettingTrue(t) {
@@ -360,4 +361,16 @@ if (particlescounter) {
   });
 }
 
+const btnServiceMenu = document.getElementById("service");
+
+btnServiceMenu?.addEventListener("click", (e) => {
+  e.preventDefault();
+  bodyLock();
+  document.getElementById("service-menu").classList.add("menu--active");
+});
+
+document.getElementById("close-service-menu").addEventListener("click", (e) => {
+  bodyLock();
+  document.getElementById("service-menu").classList.remove("menu--active");
+})
 

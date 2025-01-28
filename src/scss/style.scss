@@ -28,6 +28,8 @@
 @import "_blog-single";
 @import "_cases";
 @import "_case";
+@import "_animation";
+@import "_menu";
 @import "sections/_video-banner";
 
 
@@ -48,8 +50,7 @@ html {
 }
 
 body{
-  background: #d8dadf;
-  //background: #001727;
+  background: #181818;
   margin: 0;
   padding: 0;
   display: flex;
