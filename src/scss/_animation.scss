@@ -9,3 +9,88 @@
     height: 0px;
   }
 }
+
+// Аниация меню услуг
+
+@keyframes bgr {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes one {
+  0% {
+    width: 10%;
+  }
+
+  25% {
+    width: 12%;
+  }
+
+  50% {
+    width: 15%;
+  }
+
+  75% {
+    width: 13%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes two {
+  0% {
+    width: 10%;
+  }
+
+  25% {
+    width: 12%;
+  }
+
+  50% {
+    width: 15%;
+  }
+
+  75% {
+    width: 13%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 30em;
+  }
+
+  70% {
+    width: 30em;
+  }
+
+  100% {
+    width: 30em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    background-color: transparent;
+  }
+}

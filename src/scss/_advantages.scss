@@ -54,13 +54,17 @@
       }
     }
 
-
-
     @media (hover: hover) {
       &:hover {
         .advantages__text {
           opacity: 1;
         }
+      }
+    }
+
+    @media (hover: none) {
+      .advantages__text {
+        opacity: 1;
       }
     }
   }
@@ -83,6 +87,7 @@
       text-align: center;
       padding: 25px;
     }
+
 
   }
 }

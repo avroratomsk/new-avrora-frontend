@@ -32,6 +32,10 @@
   padding: 0;
   margin: 0;
   display: flex;
+
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
 }
 
 .breadcrumbs__item {
@@ -68,8 +72,13 @@
   color: #001727;
   font-size: 14px;
   font-weight: 600;
+  line-height: 140%;
   display: inline-block;
   text-transform: lowercase;
+
+  @media screen and (max-width: 992px) {
+    font-size: 12px;
+  }
 }
 
 .breadcrumbs__link:hover {
