@@ -69,19 +69,11 @@
 
 @keyframes typewriter {
   0% {
-    width: 0;
-  }
-
-  50% {
-    width: 30em;
-  }
-
-  70% {
-    width: 30em;
+    right: -100%;
   }
 
   100% {
-    width: 30em;
+    right: 10px;
   }
 }
 
