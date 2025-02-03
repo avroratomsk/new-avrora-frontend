@@ -374,3 +374,26 @@ document.getElementById("close-service-menu").addEventListener("click", (e) => {
   document.getElementById("service-menu").classList.remove("menu--active");
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      let child = entry.target.querySelector(".animate_text");
+      if (child) {
+        if (entry.isIntersecting) {
+          child.classList.add("animate-in");
+          child.classList.remove("animate-out");
+        } else {
+          child.classList.add("animate-out");
+          child.classList.remove("animate-in");
+        }
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+

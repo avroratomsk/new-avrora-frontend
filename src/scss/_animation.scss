@@ -86,3 +86,27 @@
     background-color: transparent;
   }
 }
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+@keyframes animateOut {
+  0% {
+    opacity: 1;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  100% {
+    opacity: 0;
+    clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
+  }
+}

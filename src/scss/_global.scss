@@ -12,6 +12,11 @@
   }
 }
 
+.container{
+  position: relative;
+  z-index: 99;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -91,5 +96,24 @@ button {
   white-space: nowrap;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  transition: all 1s ease;
+  z-index: -100;
+  opacity: 0;
+}
+
+.animate-in {
+  animation-name: animateIn;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  opacity: 1;
+  z-index: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.animate-out {
+  animation-name: animateOut;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  opacity: 0;
+  z-index: 0;
+  clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
 }
