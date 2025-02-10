@@ -85,8 +85,8 @@ button {
   font-size: 6.25vw;
   line-height: 1;
   white-space: nowrap;
-  z-index: 0;
-  opacity: 1;
+  z-index: -1;
+  opacity: 0;
 }
 
 .animate-in {

@@ -6,7 +6,7 @@
   padding: 20px 0;
   background: rgba($color: #001727, $alpha: 0.1);
   backdrop-filter: blur(24px);
-  z-index: 900;
+  z-index: 990;
   transition: all 0.5s ease;
 
   svg {
@@ -30,6 +30,9 @@
   }
 
   &__logo {
+    display: flex;
+    position: relative;
+    z-index: 120;
 
     @media (max-width: 1100px) and (min-width: 992px) {
       width: 150px;
@@ -41,12 +44,7 @@
   }
 
   &__nav {
-    @media (max-width: 992px) {
-      position: fixed;
-      top: 0;
-      left: -150%;
-      pointer-events: none;
-    }
+
   }
 
   &__action {
@@ -113,6 +111,24 @@
 
 .nav {
 
+  @media (max-width: 992px) {
+    position: fixed;
+    top: 0;
+    left: -180%;
+    pointer-events: none;
+    background-color: #001727;
+    width: 100%;
+    height: 100vh;
+    z-index: 110;
+    transition: $animation_speed;
+
+    &.active{
+      left: 0% !important;
+    }
+  }
+
+
+
   &__list {
     display: flex;
     align-items: center;
@@ -120,6 +136,14 @@
 
     @media (max-width: 1325px) {
       gap: 15px;
+    }
+
+    @media screen and (max-width: 992px) {
+      position: relative;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      z-index: 120;
     }
   }
 
@@ -139,11 +163,22 @@
       font-size: 16px;
     }
 
+    @media screen and (max-width: 992px) {
+      font-size: 36px;
+      line-height: 140%;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 25px;
+    }
+
     @media(hover: hover) {
       &:hover{
         color: #0064C8;
       }
     }
+
+
   }
 }
 
@@ -153,6 +188,7 @@
   position: relative;
   width: 50px;
   height: 50px;
+  z-index: 120;
 
   &::before, &::after, span {
     content: "";

@@ -1,4 +1,4 @@
-.serviсe {
+.service {
   position: relative;
   padding: 80px 0;
   display: flex;
@@ -114,49 +114,4 @@
   }
 }
 
-.servise .animateIn span {
-  animation-name: animateIn;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  transform: translateY(0);
-  opacity: 1;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-}
-
-.servise .animateOut span {
-  animation-name: animateOut;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  transform: translateY(50px);
-  opacity: 0;
-  clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
-}
-
-@keyframes animateIn {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-  }
-}
-
-@keyframes animateOut {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-  }
-
-  100% {
-    transform: translateY(50px);
-    opacity: 0;
-    clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
-  }
-}
 

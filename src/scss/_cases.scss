@@ -13,7 +13,7 @@
 
 .works {
   position: relative;
-  z-index: 99;
+  z-index: 100;
   background-color: #d8dadf;
 
   //.works__grid
@@ -28,8 +28,9 @@
 }
 
 .work {
+  background-color: #d8dadf;
   position: relative;
-  z-index: 999;
+  z-index: 1001;
   overflow: hidden;
 
   @media (hover: hover) {
