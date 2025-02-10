@@ -380,6 +380,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       let child = entry.target.querySelector(".animate_text");
+      console.log(child);
       if (child) {
         if (entry.isIntersecting) {
           child.classList.add("animate-in");
@@ -391,9 +392,37 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }, {
-    threshold: 0.5
+    threshold: 0.75,
   });
 
   elements.forEach(el => observer.observe(el));
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+const texts = document.querySelectorAll(".animate_text");
+
+texts.forEach((text) => {
+  ScrollTrigger.create({
+    trigger: text,
+    start: "top 20%", // Когда секция достигает 60% экрана
+    end: "top 0%", // До 20% экрана
+    onEnter: () => {
+      text.classList.remove("animate-out");
+      text.classList.add("animate-in");
+    },
+    onLeave: () => {
+      text.classList.remove("animate-in");
+      text.classList.add("animate-out");
+    },
+    onEnterBack: () => {
+      text.classList.remove("animate-out");
+      text.classList.add("animate-in");
+    },
+    onLeaveBack: () => {
+      text.classList.remove("animate-in");
+      text.classList.add("animate-out");
+    }
+  });
 });
 

@@ -28,6 +28,9 @@
 }
 
 .work {
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
 
   @media (hover: hover) {
     .work__image {
