@@ -83,13 +83,9 @@
   &__social {
     width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
-    color: #000000;
-    border-radius: 50%;
-    font-size: 12px;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
   }
 
   &__btn {

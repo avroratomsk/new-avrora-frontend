@@ -3,15 +3,13 @@
   bottom: 0;
   right: 0;
   height: 100%;
-  padding: 0px 10px;
+  padding: 0px 5px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  //background: rgba($color: #001727, $alpha: 0.1);
-  //backdrop-filter: blur(24px);
-  z-index: 99;
+  z-index: 999;
 
   @media screen and (max-width: 615px) {
     display: none;
@@ -19,6 +17,7 @@
 
 
   &__item{
+    font-size: 14px;
     writing-mode: vertical-rl;
     transition: $animation-speed;
 

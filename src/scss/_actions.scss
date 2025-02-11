@@ -1,0 +1,51 @@
+.actions{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 1210;
+
+  @media (max-width: 1100px) and (min-width: 992px) {
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+
+    i {
+      font-size: 12px;
+    }
+  }
+
+  &__city {
+
+  }
+
+  &__social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+
+  &__btn {
+  }
+
+
+}

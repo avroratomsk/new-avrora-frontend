@@ -22,7 +22,6 @@
         <a href="mailto:[[#8.email]]" class="footer__contact-link mail-hide">avroratomsk70@yandex.ru</a>
         <p class="footer__contact">Телефон</p>
         <a href="tel:[[#8.phone]]" class="footer__contact-link">8(999) 999 99 99</a>
-
       </div>
       <div class="footer__col">
         <p class="footer__title">Обратная связь</p>
@@ -33,7 +32,7 @@
           <input name="phone" class="footer__input" type="tel" placeholder="Телефон" required="">
           <textarea name="message" cols="30" rows="5" class="footer__input" placeholder="Сообщение"
                     required=""></textarea>
-          <button class="footer__btn">Отправить</button>
+          <button class="btn footer__btn">Отправить</button>
         </form>
         <button type="button" class="footer__btn footer__btn--mb">Оставиь заявку</button>
       </div>
@@ -56,7 +55,6 @@
   </div>
   </div>
 
-
   <div class="footer__lines">
     <div class="footer__lines-inner">
       <div class="footer__line"></div>
@@ -71,9 +69,6 @@
       <div class="footer__line"></div>
     </div>
   </div>
-
-  <canvas id="canvasTree"></canvas>
-
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+@@include('./_actions.html')

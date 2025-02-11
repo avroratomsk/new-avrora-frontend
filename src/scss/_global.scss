@@ -51,12 +51,20 @@ button {
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  gap: 5px;
   padding: 10px 15px;
   border-radius: 10px;
   border: 1px solid #0064C8;
   background-color: #0064C8;
   color: #fff;
   font-size: 14px;
+  transition: $animation-speed;
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: #0579ea;
+    }
+  }
 }
 
 .sticky-text {
